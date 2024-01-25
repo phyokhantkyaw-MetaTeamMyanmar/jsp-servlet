@@ -1,0 +1,5 @@
+Food	Potato Chips	500
+Food	Fish Chips	500
+Cold Drink	Pepsi	350
+Cold Drink	Cola	700
+Cold Drink	String	400
