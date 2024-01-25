@@ -12,6 +12,11 @@
 </head>
 <body>
 	<h1>Sale History</h1>
+	<hr />
+	<p>
+		<a href="index.jsp">Back</a>
+	</p>
+	<hr />
 	<%!String formatDateTime(LocalDateTime date) {
 		return date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
 	}%>
@@ -34,7 +39,7 @@
 			for (Voucher v : list) {
 			%>
 			<tr>
-				<td><a href="sale-details?id=<%=v.getId()%>>"> <%=v.getId()%></a></td>
+				<td><a href="sale-details?id=<%=v.getId()%>"> <%=v.getId()%></a></td>
 				<td><%=formatDateTime(v.getSaleTime())%></td>
 				<td><%=v.getCustomer()%></td>
 				<td><%=v.itemCount()%></td>
